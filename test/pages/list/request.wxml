@@ -1,0 +1,19 @@
+<!--pages/request/request.wxml-->
+<button bindtap='request'>QIUSDFS</button>
+<view class='goodsbox'>
+<!-- {{goods}} -->
+   <!-- <view class='goodslist' wx:for="{{goods}}" wx:key="*this">
+      <image src='{{item.img[0]}}'></image>
+      <text>{{item.goodsname}}</text>
+   </view>  -->
+   
+   <view class='goodslist' wx:for="{{goods}}" wx:key="*this" data-id='{{item.id}}' bindtap='goToDetail'>
+      <view class='viewimage'>
+        <image lazy-load='true' src='{{item.img[0]}}'></image>
+      </view>
+      <view class='viewtext'>
+        <text class='shopTitle'>{{item.goodsname}}\n</text>
+        <text class='shopPrice'>${{item.nowprice}}</text>
+      </view>
+   </view>  
+</view>

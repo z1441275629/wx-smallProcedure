@@ -1,0 +1,28 @@
+<!--pages/login/login.wxml-->
+
+
+
+<block wx:if="{{!hasUser}}">
+  <view class='go-reg'>
+    <text>我还没有账号，快速</text>
+    <!-- <navigator url='/pages/reg/reg'>注册</navigator> -->
+    <text bindtap='reg' class="reg">注册</text>
+  </view>
+  
+  <view class='log-box'>
+    <text>用户名</text>
+    <input type='number' bindinput='uname' placeholder='手机号' focus></input>
+    <text>密码</text>
+    <input password='true' bindinput='upass' placeholder='6-12位密码'></input>
+    <button bindtap='log' type='primary' class='log'>登陆</button>
+  </view>
+  <text class='warn' bindtap="hide"  wx:if='{{TF}}'>{{warn}}</text>    
+</block>
+<block wx:else>
+  <view>
+    <text>欢迎你：<text>{{hasUser}}</text></text>
+    <button bindtap='exit'>安全退出登录</button>
+  </view>
+</block>
+
+    

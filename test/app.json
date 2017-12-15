@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/reg/reg",
+    "pages/login/login",
+    "pages/list/request",
+    "pages/detail/detail",
+    "pages/cart/cart",
+    "pages/form/form"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "优客联",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_active.png"
+      },
+      {
+        "pagePath": "pages/list/request",
+        "text": "列表",
+        "iconPath": "images/icon_classify.png",
+        "selectedIconPath": "images/icon_classify_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/icon_shop_cart.png",
+        "selectedIconPath": "images/icon_shop_cart_active.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "images/icon_info.png",
+        "selectedIconPath": "images/icon_info_active.png"
+      }
+    ]
+  }
+}

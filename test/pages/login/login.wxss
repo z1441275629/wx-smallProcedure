@@ -1,0 +1,43 @@
+/* pages/login/login.wxss */
+.log-box{
+  margin-top:20%;
+}
+.log-box text{
+  display: block;
+  padding:50rpx 50rpx 20rpx;
+}
+.log-box input{
+  padding: 20rpx 50rpx;
+  background:goldenrod;
+  margin: 0 50rpx;
+  border-radius: 10rpx;
+}
+.log{
+  margin: 100rpx 50rpx 0;
+  border-radius: 10rpx;
+}
+.warn{
+  display: block;
+  position: absolute;
+  width:80%;
+  left:10%;
+  top:50%;
+  background:black;
+  color:white;
+  padding:20rpx 0;
+  text-align: center;
+}
+.go-reg{
+  position: fixed;
+  right:80rpx;
+  top:0;
+  display: flex;
+}
+/* .go-reg navigator{
+  color:blue;
+  margin-left:10rpx;
+} */
+.reg{
+  color:blue;
+  margin-left:10rpx;
+}

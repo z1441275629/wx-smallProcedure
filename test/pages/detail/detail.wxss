@@ -1,0 +1,20 @@
+/* pages/detail/detail.wxss */
+.detailbox{
+  width: 100%;
+  background: #f5f5f5;
+}
+.titleDetail{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size:30px;
+}
+.nowprice{
+  text-align: right;
+}
+image{
+  width: 100%;
+  height: 250rpx;
+}

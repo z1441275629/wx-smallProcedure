@@ -1,0 +1,58 @@
+/* pages/cart/cart.wxss */
+.cart_title{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size:30px;
+}
+.listcart{
+  display: flex;
+  border: 1px solid #ccc;
+}
+.list_left{
+  display: flex;
+  width: 260rpx;
+}
+.list_left checkbox{
+  margin-top: 65rpx;
+}
+.list_left image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.button{
+  display: flex;
+}
+.button button{
+  width: 100rpx;
+  height: 100rpx;
+}
+.button input{
+  width: 100rpx;
+   height: 100rpx; 
+  text-align: center;
+  line-height: 100rpx;
+}
+.caozuo{
+  display: flex;
+}
+.list_right{
+  flex: 1;
+}
+.list_right_title{
+  width: 490rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.delete{
+  background-color: red;
+  color: white;
+}
+.total{
+  position: fixed;
+  left: 0;
+  bottom: 30rpx;
+}

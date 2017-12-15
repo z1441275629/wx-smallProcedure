@@ -1,0 +1,30 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart_title'>购物车页</view>
+<view class='listcart'wx:for="{{goods}}" wx:if="{{goods[index].del}}" wx:key="*this">
+  <view class='list_left'>
+    <checkbox value="111" checked="{{item.check}}" bindtap='isChecked' data-idx="{{index}}"/>
+    <image src='{{item.goodsInfo.img[0]}}'></image>
+  </view>
+  <view class='list_right'>
+     <view class='list_right_title'><text>{{item.goodsInfo.goodsname}}</text></view>
+     <view class='caozuo'>
+        <view>
+            <text>单价：{{item.goodsInfo.nowprice}}</text>
+            <view class='button'>
+               <button data-idx="{{index}}" bindtap='decrease'>-</button>
+               <input value='{{item.goodscount}}'></input>  
+               <button data-idx="{{index}}" bindtap='plus'>+</button>
+            </view>
+        </view>
+        <view>
+          <button data-idx="{{index}}" class='delete' bindtap='delete1'>删除</button>
+        </view>
+     </view>   
+  </view>
+  
+</view>
+
+<button bindtap="total" class='total'>结账：{{total}}</button>
+
+
+

@@ -1,0 +1,15 @@
+<!--pages/reg/reg.wxml-->
+<view class='go-login'>
+  <text>我是老用户，立即</text>
+  <text class='log' bindtap='log'>登录</text>
+  <!-- <navigator url='/pages/login/login'>登陆</navigator> -->
+</view>
+
+<view class='reg-box'>
+  <text>用户名</text>
+  <input type='number' placeholder='输入手机号注册' data-name='{{msg.userName}}' bindblur='checkName' bindinput='uname'></input>
+  <text>密码</text>
+  <input password='true' placeholder='密码' data-pass='{{msg.userPass}}' bindblur='checkPass' bindinput='upass'></input>
+  <button class='reg' bindtap='reg' type='primary'>注册</button>
+</view>
+<text bindtap='hide' class='warn' wx:if='{{TF}}'>{{warn}}</text>
